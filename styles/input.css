@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+.dropdown-2{
+    height: 0;
+    overflow: hidden;
+}
+#menu:checked ~ .dropdown-2 {
+  height: auto;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About Us!</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" type="text/css" href="./styles/output.css" />
+    <link rel="icon" href="favicon.png" />
+  </head>
+
+  <body class="p-4">
+    <div class="mx-auto max-w-200">
+      <!-- Desktop Navigation -->
+      <nav class="bg-gray-800 text-white p-4 rounded-lg hidden md:block">
+        <ul class="md:flex gap-8 items-center">
+          <li><a href="/">Home</a></li>
+          <li><a href="./contact.html">Contacts</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+          <li>
+            <button class="btn theme-selector" onclick="toggleTheme(event)">
+              🌙
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <nav class="md:hidden mobile-menu">
+        <input id="menu" type="checkbox" class="hidden" />
+
+        <div class="flex justify-between items-center">
+          <h1>Logo</h1>
+          <label for="menu" class="cursor-pointer text-2xl">☰</label>
+        </div>
+
+        <ul class="dropdown-2 bg-gray-800 px-4 mt-4 rounded-lg">
+          <li class="mt-4"><a href="/">Home</a></li>
+          <li class="mt-4"><a href="./contact.html">Contacts</a></li>
+          <li class="mt-4"><a href="./about.html">About Us</a></li>
+          <li class="my-4"><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="my-8">
+        <h1 class="text-4xl mb-8 font-black text-center md:text-left">
+          About Us
+        </h1>
+
+        <div class="w-full">
+          <img
+            class="w-full rounded-2xl"
+            src="./images/about.jpg"
+            alt="About Us"
+          />
+        </div>
+      </section>
+
+      <!-- Cards Section -->
+      <section class="grid md:grid-cols-2 gap-8 mb-4">
+        <div class="card bg-base-100 shadow-sm">
+          <figure>
+            <img src="./images/phone.jpg" alt="Phone" />
+          </figure>
+
+          <div class="card-body">
+            <h2 class="card-title">Card Title</h2>
+            <p>
+              A card component has a figure, a body part, and inside body there
+              are title and actions parts
+            </p>
+
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-sm">
+          <figure>
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+              alt="Shoes"
+            />
+          </figure>
+
+          <div class="card-body">
+            <h2 class="card-title">Card Title</h2>
+            <p>
+              A card component has a figure, a body part, and inside body there
+              are title and actions parts
+            </p>
+
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Buy Now</button>
